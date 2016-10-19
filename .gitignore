@@ -1,0 +1,5 @@
+*.pdf
+*.log
+*.aux
+_minted-document
+*.synctex.gz
