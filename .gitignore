@@ -3,3 +3,4 @@
 *.aux
 _minted-document
 *.synctex.gz
+*.out

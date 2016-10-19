@@ -13,7 +13,6 @@ plt.show()
 
 
 a = np.random.rand()
-
 b = np.random.uniform()
 c = np.random.exponential()
 
