@@ -6,11 +6,35 @@
 \usepackage{graphicx}
 \usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
 \usepackage{lmodern}
-\usepackage{minted}
+%\usepackage{minted}
 \begin{document}
 	\title{Lecture 1}
 	\author{Daniel Celis Garza}
 	\date{\today}
 	\maketitle
-	\inputminted{python}{../python/test.py}
+	\section{Implicit Methods}
+	
+	\subsection{Backwards Euler}
+	Suppose we have an ODE
+	\begin{eqnarray}
+		\dfrac{\mathrm{d}y}{\mathrm{d}t} = f(t,y)
+	\end{eqnarray}
+	Taylor expansion about $t_{n+1}$ where $h$ is the time step,
+	\begin{eqnarray}\label{eq:backeul}
+		y_{n} &=& y_{n+1} - h f(t_{n+1},y_{n+1}).
+	\end{eqnarray}
+	
+	We need to know what $y_{n+1}$ looks like before using the method. Define an operator, $\mathbf{M}$, acting on $y_{n+1}$,	
+	\begin{eqnarray}
+		\mathbf{M} y_{n+1} &\equiv& f(t_{n+1}, y_{n+1}) \\
+		y_{n+1} &=& y_{n} + h \mathbf{M} y_{n+1} \\
+		(1 - \mathbf{M}) y_{n+1} &=& y_{n}.
+	\end{eqnarray}
+	We can also solve this algebraic equation via fixed-point iteration for the unknown $y_{n+1}$,
+	\begin{eqnarray}
+		y_{n+1}^{[0]} &=& y_{n} \\
+		y_{n+1}^{[i+1]} &=& y_{n} + h f(t_{n+1},y_{n+1}^{[i]})
+	\end{eqnarray}
+	or a numerical analogue of the Newton-Raphson method.
+	
 \end{document}
