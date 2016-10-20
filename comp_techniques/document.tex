@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
 \usepackage{lmodern}
-%\usepackage{minted}
+\usepackage{minted}
 \begin{document}
 	\title{Lecture 1}
 	\author{Daniel Celis Garza}
@@ -36,5 +36,11 @@
 		y_{n+1}^{[i+1]} &=& y_{n} + h f(t_{n+1},y_{n+1}^{[i]})
 	\end{eqnarray}
 	or a numerical analogue of the Newton-Raphson method.
+	
+	\subsection{Examples}
+	\subsubsection{Lotka-Volterra}
+	\inputminted{python}{../python/examples.py}
+	
+	\subsubsection{Coulomb's Law}
 	
 \end{document}
