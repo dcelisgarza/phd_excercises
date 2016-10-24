@@ -1,0 +1,80 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}*\PYGZhy{} coding: utf\PYGZhy{}8 \PYGZhy{}*\PYGZhy{}}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{Created on Mon Oct 24 12:52:06 2016}
+
+\PYG{l+s+sd}{@author: Daniel Celis Garza}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot}   \PYG{k+kn}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{scipy.integrate}       \PYG{k+kn}{import} \PYG{n}{odeint}
+\PYG{k+kn}{from} \PYG{n+nn}{numpy} \PYG{k+kn}{import} \PYG{n}{pi}       \PYG{k}{as} \PYG{n}{np\PYGZus{}pi}
+\PYG{k+kn}{from} \PYG{n+nn}{numpy} \PYG{k+kn}{import} \PYG{n}{exp}      \PYG{k}{as} \PYG{n}{np\PYGZus{}exp}
+\PYG{k+kn}{from} \PYG{n+nn}{numpy} \PYG{k+kn}{import} \PYG{n}{sqrt}     \PYG{k}{as} \PYG{n}{np\PYGZus{}sqrt}
+\PYG{k+kn}{from} \PYG{n+nn}{numpy} \PYG{k+kn}{import} \PYG{n}{linspace} \PYG{k}{as} \PYG{n}{np\PYGZus{}linspace}
+\PYG{k+kn}{from} \PYG{n+nn}{numpy} \PYG{k+kn}{import} \PYG{n}{array}    \PYG{k}{as} \PYG{n}{np\PYGZus{}array}
+
+\PYG{c+c1}{\PYGZsh{} Close all figures.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{close}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}all\PYGZdq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Matplotlib parameters to use TeX font and customise text size.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{rc}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{,} \PYG{n}{usetex} \PYG{o}{=} \PYG{n+nb+bp}{True}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{rc}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}font\PYGZdq{}}\PYG{p}{,} \PYG{n}{family} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}serif\PYGZdq{}}\PYG{p}{,} \PYG{n}{size} \PYG{o}{=} \PYG{l+m+mi}{16}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Define a general function for derivatives.}
+\PYG{k}{def} \PYG{n+nf}{derivs}\PYG{p}{(}\PYG{n}{f}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{params}\PYG{p}{):}
+    \PYG{c+c1}{\PYGZsh{} Electrostatic potential.}
+    \PYG{n}{phi} \PYG{o}{=} \PYG{n}{f}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+    \PYG{c+c1}{\PYGZsh{} Electric field.}
+    \PYG{n}{e}   \PYG{o}{=} \PYG{n}{f}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}
+    \PYG{c+c1}{\PYGZsh{} Calculate vi.}
+    \PYG{n}{vi}  \PYG{o}{=} \PYG{n}{np\PYGZus{}sqrt}\PYG{p}{(}\PYG{n}{params}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{**}\PYG{l+m+mi}{2} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{phi}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} Derivatives (d2phidx2 is actually de/dx which is the negative of d\PYGZca{}2phi/dx\PYGZca{}2).}
+    \PYG{n}{dphidx}   \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{e}
+    \PYG{n}{d2phidx2} \PYG{o}{=} \PYG{n}{params}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{/}\PYG{n}{vi} \PYG{o}{\PYGZhy{}} \PYG{n}{np\PYGZus{}exp}\PYG{p}{(}\PYG{n}{phi}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} Result of the function in the order f is given.}
+    \PYG{k}{return} \PYG{p}{[}\PYG{n}{dphidx}\PYG{p}{,} \PYG{n}{d2phidx2}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} x\PYGZhy{}array}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{np\PYGZus{}linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{40}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Starting conditions for f\PYGZus{}initial = [phi\PYGZus{}initial, E\PYGZus{}initial].}
+\PYG{n}{fi} \PYG{o}{=} \PYG{n}{np\PYGZus{}array}\PYG{p}{([}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mf}{0.001}\PYG{p}{])}
+\PYG{c+c1}{\PYGZsh{} Vs = 1 (as an array so we can use the generalised derivs function in the future)}
+\PYG{n}{vs} \PYG{o}{=} \PYG{n}{np\PYGZus{}array}\PYG{p}{([}\PYG{l+m+mf}{1.0}\PYG{p}{])}
+\PYG{c+c1}{\PYGZsh{} Integrate.}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{odeint}\PYG{p}{(}\PYG{n}{derivs}\PYG{p}{,} \PYG{n}{fi}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{args} \PYG{o}{=} \PYG{p}{(}\PYG{n}{vs}\PYG{p}{,))}
+
+\PYG{c+c1}{\PYGZsh{} Make two subplots for the assignment.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{))}
+\PYG{n}{ax1} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplot}\PYG{p}{(}\PYG{l+m+mi}{211}\PYG{p}{)}
+\PYG{n}{ax2} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplot}\PYG{p}{(}\PYG{l+m+mi}{212}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Plot electrostatic potential and electric field.}
+\PYG{n}{ax1}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{[:,}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{label} \PYG{o}{=} \PYG{l+s+s2}{r\PYGZdq{}Electrostatic Potential, \PYGZdl{}\PYGZbs{}phi\PYGZdl{}\PYGZdq{}}\PYG{p}{,} \PYG{n}{linestyle} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax1}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{y}\PYG{p}{[:,}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{n}{label} \PYG{o}{=} \PYG{l+s+s2}{r\PYGZdq{}Electric Field, \PYGZdl{}E\PYGZdl{}\PYGZdq{}}\PYG{p}{,} \PYG{n}{linestyle} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax1}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s2}{r\PYGZdq{}Debye Lengths\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax1}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s2}{r\PYGZdq{}Normalised Potential \PYGZbs{}\PYGZam{} Electric Field\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax1}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{b} \PYG{o}{=} \PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{which} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}major\PYGZdq{}}\PYG{p}{,} \PYG{n}{linestyle} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,} \PYG{n}{alpha} \PYG{o}{=} \PYG{l+m+mf}{0.6}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Minor ticks option.}
+\PYG{c+c1}{\PYGZsh{}ax1.grid(b = True, which = \PYGZdq{}minor\PYGZdq{}, linestyle = \PYGZdq{}\PYGZhy{}.\PYGZdq{}, alpha = 0.1)}
+\PYG{c+c1}{\PYGZsh{}ax1.minorticks\PYGZus{}on()}
+\PYG{n}{ax1}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{n}{loc}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Plot current.}
+\PYG{n}{mi} \PYG{o}{=} \PYG{l+m+mi}{1840}
+\PYG{n}{me} \PYG{o}{=} \PYG{l+m+mi}{1}
+\PYG{n}{j}  \PYG{o}{=} \PYG{n}{np\PYGZus{}sqrt}\PYG{p}{(}\PYG{n}{mi}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np\PYGZus{}pi}\PYG{o}{*}\PYG{n}{me}\PYG{p}{))} \PYG{o}{*} \PYG{n}{np\PYGZus{}exp}\PYG{p}{(}\PYG{n}{y}\PYG{p}{[:,}\PYG{l+m+mi}{0}\PYG{p}{])} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}
+
+\PYG{n}{ax2}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{j}\PYG{p}{,} \PYG{n}{label} \PYG{o}{=} \PYG{l+s+s2}{r\PYGZdq{}Current, \PYGZdl{}J\PYGZdl{}\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax2}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s2}{r\PYGZdq{}Debye Lengths\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax2}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s2}{r\PYGZdq{}Normalised Current\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{ax2}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{b} \PYG{o}{=} \PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{which} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}major\PYGZdq{}}\PYG{p}{,} \PYG{n}{linestyle} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,} \PYG{n}{alpha} \PYG{o}{=} \PYG{l+m+mf}{0.6}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Minor ticks option.}
+\PYG{c+c1}{\PYGZsh{}ax2.grid(b = True, which = \PYGZdq{}minor\PYGZdq{}, linestyle = \PYGZdq{}\PYGZhy{}.\PYGZdq{}, alpha = 0.1)}
+\PYG{c+c1}{\PYGZsh{}ax2.minorticks\PYGZus{}on()}
+\PYG{n}{ax2}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{n}{loc}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Tighten layout.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} Save figure.}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{n}{filename}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}debye.eps\PYGZdq{}}\PYG{p}{,} \PYG{n}{format}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}eps\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}
