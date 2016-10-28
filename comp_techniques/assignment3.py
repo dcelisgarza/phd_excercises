@@ -51,24 +51,33 @@ def run(system):
     plt.rc("text", usetex = True)
     plt.rc("font", family = "serif", size = 16)
     
-    plt.figure(1) # Create figure.
+    viwall = np.array([])
+    L = np.array([0.1, 1., 10, 100, 1000, 10000])
+    fig = plt.figure(1, figsize = (13,13/1.618)) # Create figure.
     x = np.linspace(0., 40., 100) # Create linspace.
-    for l in [0.1, 1., 10, 100, 1000, 10000]: # Loop over vs
+    for l in L: # Loop over vs
         system = sheath([0., 0.001, 1.], 1., l) # Initialise system with desired vs.
         f = sc.integrate.odeint(system, system.f0, x) # Integrate
         j  = system.cnt * np.exp(f[:,0]) - 1 # Calculate J
-        x = x - np.interp(0., j[::-1], x[::-1]) # Interpolate to find x intersect.
-        plt.plot(x, f[:,2], label = (r"$L = %1.i$" % l)) # Plot each curve
-    
+        xwall = x - np.interp(0., j[::-1], x[::-1]) # Interpolate to find x intersect.
+        viwall = np.append(viwall, np.interp(0., xwall, f[:,2]))
+        plt.plot(xwall, f[:,2], label = (r"$L = %1.i$" % l)) # Plot each curve
+        
     grids(0.5, 0.0)
-    plt.ylabel(r"Normalised Current")
+    plt.ylabel(r"Normalised Ion Velocity")
     plt.xlabel(r"Debye Lengths")
     plt.xlim([-20, 20]) ; plt.ylim([0, 5])
-#    plt.xscale("log")
-    plt.legend(loc=0)
-    plt.tight_layout()
+    plt.legend(loc=1)    
+    
+    ax = fig.add_axes([.2, .5, .25, .3])
+    ax.plot(L, viwall)
+    ax.grid(alpha = 0.5)
+    ax.set_ylabel(r"Ion Velocity \@ Wall, $v_{i}(x = 0)$")
+    ax.set_xlabel(r"Collision Length, L")
+    ax.set_xscale("log")
+    #plt.tight_layout()
     plt.savefig(filename = "collisions.eps", format = "eps")
 
 
-system = sheath([0.,0.001, 0.1], 1., 0.1)
+system = sheath([0.,0.001, 1.], 1., 0.1)
 run(system)
