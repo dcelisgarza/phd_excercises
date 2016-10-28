@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Oct 26 11:42:14 2016
+Created on Fri Oct 28 13:47:14 2016
 
 @author: dcg513
 """
@@ -11,26 +11,29 @@ import scipy as sc
 
 class sheath(object):
     
-    def __init__(self, f0, vs, mi = 1840, me = 1):
+    def __init__(self, f0, vs, l, mi = 1840, me = 1):
         # Initialise f0 with the values of the starting conditions.
         self.f0 = [f0[i] for i in range(len(f0))]      
         self.vs  = vs
         self.vs2 = vs*vs
+        self.l = l
         self.cnt = np.sqrt(mi/(2*np.pi*me))
     
     def show(self):
         print(self.f0)
         print(self.vs)
         print(self.vs2)
+        print(self.l)
         print(self.cnt)
     
     def __call__(self, f, t):
         phi = f[0]
         e   = f[1]
-        vi  = np.sqrt(self.vs2 - 2*phi)
+        vi  = f[2]
         dphidx    = -e
         nd2phidx2 = self.vs/vi - np.exp(phi)
-        return [dphidx, nd2phidx2]
+        dvidx = e/vi - vi/self.l
+        return [dphidx, nd2phidx2, dvidx]
     
     def current(self, phi):
         return self.cnt * np.exp(phi) - 1
@@ -50,24 +53,22 @@ def run(system):
     
     plt.figure(1) # Create figure.
     x = np.linspace(0., 40., 100) # Create linspace.
-    for vs in [1.0, 1.5, 2.0]: # Loop over vs
-        system = sheath([0., 0.001], vs) # Initialise system with desired vs.
+    for l in [0.1, 1., 10, 100, 1000, 10000]: # Loop over vs
+        system = sheath([0., 0.001, 1.], 1., l) # Initialise system with desired vs.
         f = sc.integrate.odeint(system, system.f0, x) # Integrate
         j  = system.cnt * np.exp(f[:,0]) - 1 # Calculate J
         x = x - np.interp(0., j[::-1], x[::-1]) # Interpolate to find x intersect.
-        plt.plot(x, j, label = (r"$v_{s} = %.1f$" % system.vs)) # Plot each curve
+        plt.plot(x, f[:,2], label = (r"$L = %1.i$" % l)) # Plot each curve
     
     grids(0.5, 0.0)
     plt.ylabel(r"Normalised Current")
     plt.xlabel(r"Debye Lengths")
+    plt.xlim([-20, 20]) ; plt.ylim([0, 5])
+#    plt.xscale("log")
     plt.legend(loc=0)
-    plt.tight_layout
     plt.tight_layout()
-    plt.savefig(filename = "changevs.eps", format = "eps")
+    plt.savefig(filename = "collisions.eps", format = "eps")
 
 
-system = sheath([0.,0.001], 1.)
+system = sheath([0.,0.001, 0.1], 1., 0.1)
 run(system)
-
-
-

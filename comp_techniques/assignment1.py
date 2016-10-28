@@ -49,13 +49,13 @@ ax2 = plt.subplot(212)
 
 # Plot electrostatic potential and electric field.
 ax1.plot(x,y[:, 0], label = r"Electrostatic Potential, $\phi$", linestyle = "-")
-ax1.plot(x,y[:, 1], label = r"Electric Field, $E$", linestyle = "--")
+ax1.plot(x,y[:, 1], label = r"Electric Field, $E$", linestyle = "-")
 ax1.set_xlabel(r"Debye Lengths")
 ax1.set_ylabel(r"Normalised Potential \& Electric Field")
 ax1.grid(b = True, which = "major", linestyle = "--", alpha = 0.6)
 # Minor ticks option.
-ax1.grid(b = True, which = "minor", linestyle = "-.", alpha = 0.3)
-ax1.minorticks_on()
+#ax1.grid(b = True, which = "minor", linestyle = "-.", alpha = 0.05)
+#ax1.minorticks_on()
 ax1.legend(loc = 3)
 
 # Plot current.
@@ -68,13 +68,13 @@ ax2.set_xlabel(r"Debye Lengths")
 ax2.set_ylabel(r"Normalised Current")
 ax2.grid(b = True, which = "major", linestyle = "--", alpha = 0.6)
 # Minor ticks option.
-ax2.grid(b = True, which = "minor", linestyle = "-.", alpha = 0.3)
-ax2.minorticks_on()
+#ax2.grid(b = True, which = "minor", linestyle = "-.", alpha = 0.05)
+#ax2.minorticks_on()
 ax2.legend(loc = 0)
 
 # Tighten layout.
 plt.tight_layout()
 # Show figure.
-
+plt.show()
 # Save figure.
 plt.savefig(filename = "debye.eps", format = "eps")
