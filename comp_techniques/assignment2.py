@@ -24,7 +24,7 @@ class sheath(object):
         print(self.vs2)
         print(self.cnt)
     
-    def __call__(self, f, t):
+    def __call__(self, f, x):
         phi = f[0]
         e   = f[1]
         vi  = np.sqrt(self.vs2 - 2*phi)

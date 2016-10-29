@@ -26,7 +26,7 @@ class sheath(object):
         print(self.l)
         print(self.cnt)
     
-    def __call__(self, f, t):
+    def __call__(self, f, x):
         phi = f[0]
         e   = f[1]
         vi  = f[2]
@@ -52,32 +52,31 @@ def run(system):
     plt.rc("font", family = "serif", size = 16)
     
     viwall = np.array([])
-    L = np.array([0.1, 1., 10, 100, 1000, 10000])
+    L = np.logspace(-1,4,6)
     fig = plt.figure(1, figsize = (13,13/1.618)) # Create figure.
-    x = np.linspace(0., 40., 100) # Create linspace.
+    x = np.linspace(0., 100., 1000) # Create linspace.
     for l in L: # Loop over vs
         system = sheath([0., 0.001, 1.], 1., l) # Initialise system with desired vs.
         f = sc.integrate.odeint(system, system.f0, x) # Integrate
-        j  = system.cnt * np.exp(f[:,0]) - 1 # Calculate J
-        xwall = x - np.interp(0., j[::-1], x[::-1]) # Interpolate to find x intersect.
-        viwall = np.append(viwall, np.interp(0., xwall, f[:,2]))
-        plt.plot(xwall, f[:,2], label = (r"$L = %1.i$" % l)) # Plot each curve
+        j = system.current(f[:,0])
+        xwall = x - np.interp(0., j[::-1], x[::-1]) # Interpolate to find x when j = 0.
+        viwall = np.append(viwall, np.interp(0., xwall, f[:,2])) # Interpolate to find vi when xwall = 0.
+        plt.plot(xwall, f[:,2], label = (r"$\hat{L} = %.1f$" % l)) # Plot each curve
         
     grids(0.5, 0.0)
     plt.ylabel(r"Normalised Ion Velocity")
     plt.xlabel(r"Debye Lengths")
-    plt.xlim([-20, 20]) ; plt.ylim([0, 5])
+    plt.xlim([-20, 40]) ; plt.ylim([0, 5])
     plt.legend(loc=1)    
     
-    ax = fig.add_axes([.2, .5, .25, .3])
+    ax = fig.add_axes([.125, .55, .15, .35])
     ax.plot(L, viwall)
     ax.grid(alpha = 0.5)
-    ax.set_ylabel(r"Ion Velocity \@ Wall, $v_{i}(x = 0)$")
+    ax.set_ylabel(r"Ion Velocity @ Wall, $v_{i}(x = 0)$")
     ax.set_xlabel(r"Collision Length, L")
     ax.set_xscale("log")
-    #plt.tight_layout()
+    plt.tight_layout()
     plt.savefig(filename = "collisions.eps", format = "eps")
-
 
 system = sheath([0.,0.001, 1.], 1., 0.1)
 run(system)
