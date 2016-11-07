@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy as sc
 
+# Expanded the sheath class from assignment 2. I couldn't find a way to do this with abstract classes.
 class sheath(object):
     
     # Initialisation subroutine.
@@ -84,26 +85,41 @@ def run(system):
         j = system.current(f[:,0])
         # Interpolate to find x when j = 0.
         x_wall = x - np.interp(0., j[::-1], x[::-1])
-        # Interpolate to find vi when x_wall = 0.
+        # Interpolate to find vi when x_wall = 0, vi_wall = vi(x_wall=0).
         # Append value to vi_wall array.
         vi_wall = np.append(vi_wall, np.interp(0., x_wall, f[:,2]))
         # Plot each curve.
         plt.plot(x_wall, f[:,2], label = (r"$\hat{L} = %.1f$" % l))
-        
-    grids(0.5)
-    plt.ylabel(r"Normalised Ion Velocity")
-    plt.xlabel(r"Debye Lengths")
-    plt.xlim([-20, 40]) ; plt.ylim([0, 5])
-    plt.legend(loc=1)    
     
-    ax = fig.add_axes([.125, .55, .15, .35])
+    # Add grids.    
+    grids(0.5)
+    # Labels.
+    plt.ylabel(r"$v_{i}$, [Normalised]")
+    plt.xlabel(r"$x_{w}$, [Debye Lengths]")
+    # Plot limits.
+    plt.xlim([-20, 40]) ; plt.ylim([0, 5])
+    # Adjust legend so that it doesn't cover anything important.
+    plt.legend(bbox_to_anchor=(0., 0.50, 1., .23))    
+    
+    # Add inset axes at given coordinates.
+    ax = fig.add_axes([.11, .44, .21, .48])
+    # Plot vi_wall as a function of collision length.
     ax.plot(l_arr, vi_wall)
+    # Add major grids.
     ax.grid(alpha = 0.5)
-    ax.set_ylabel(r"Ion Velocity @ Wall, $v_{i}(x = 0)$")
-    ax.set_xlabel(r"Collision Length, L")
+    # Labels.
+    ax.set_ylabel(r"$\hat{v_{i}}$ @ Wall $(x_{w} = 0)$")
+    ax.set_xlabel(r"$\hat{L}$, Collision length")
+    # Logarithmic x-scale
     ax.set_xscale("log")
+    # Tight layout for the plot.
     plt.tight_layout()
+    # Save figure.
     plt.savefig(filename = "collisions.eps", format = "eps")
+    # Show plot.
+    plt.show()
 
+# Initialise system, values don't matter as they're set within run.
 system = sheath([0.,0., 0.], 0., 0.)
+# Run code.
 run(system)

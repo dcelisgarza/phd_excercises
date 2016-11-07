@@ -80,13 +80,13 @@ def run(system):
         # Interpolate to find x when J = 0.
         x_wall = x - np.interp(0., j[::-1], x[::-1])
         # Plot each curve.
-        plt.plot(x_wall, j, label = (r"$v_{s} = %.1f$" % system.vs)) 
+        plt.plot(x_wall, j, label = (r"$\hat{v_{s}} = %.1f$" % system.vs)) 
     
     # Add grids.
     grids(0.5)
     # Labels.
     plt.ylabel(r"$J$, [Normalised]")
-    plt.xlabel(r"$x$, [Debye Lengths]")
+    plt.xlabel(r"$x_{wall}$, [Debye Lengths]")
     # Legend position.
     plt.legend(loc=0)
     # Tight layout.
@@ -98,6 +98,7 @@ def run(system):
 
 # Initialise system with any values, they're changed inside run.
 system = sheath([0.,0.], 0.)
+# Run code.
 run(system)
 
 
