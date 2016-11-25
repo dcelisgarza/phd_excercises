@@ -26,7 +26,7 @@
 		m_{i} v_{i} \dfrac{\mathrm{d} v_{i}}{\mathrm{d} x} &= e E \nonumber\\
 		\dfrac{\mathrm{d} v_{i}}{\mathrm{d} x} &= \dfrac{e}{m_{i} v_{i}} E.
 	\end{align}
-	In order to account for particle loss due to collisions we may add a term which subtracts from the velocity gradient. By dimensional analysis we know this term must be in $time^{-1}$, so we may assume it is directly proportional to the ion velocity $v_{i}$ and inversely proportional to a characteristic collision length, $L$. Thus making this new term have a value of $-\dfrac{v_{i}}{L}$, where we absorb any proportionality with $v_{i}$ into $L$. This adjustment also has the advantage of vanishing at large $L$, recuperating the case for no collisions. By defining $\hat{L} = \dfrac{L}{\lambda_{D}}$, using the same normalisations for all other quantities as described in assignment 1 and recalling the definition for $c_{s} = \sqrt{\dfrac{e T_{e}}{m_{i}}}$ we obtain the following normalised expression,
+	In order to account for particle loss due to collisions we may add a term which subtracts from the velocity gradient. By dimensional analysis we know this term must be in $time^{-1}$ units, so we may assume it is directly proportional to the ion velocity $v_{i}$ and inversely proportional to a characteristic collision length, $L$. Thus making this new term have a value of $-\dfrac{v_{i}}{L}$, where we absorb any proportionality with $v_{i}$ into $L$. This adjustment also has the advantage of vanishing at large $L$, recuperating the case for no collisions. By defining $\hat{L} = \dfrac{L}{\lambda_{D}}$, using the same normalisations for all other quantities as described in assignment 1 and recalling the definition for $c_{s} = \sqrt{\dfrac{e T_{e}}{m_{i}}}$ we obtain the following normalised expression,
 	\begin{align}
 		\dfrac{c_{s}}{\lambda_{D}} \dfrac{\mathrm{d} \hat{v_{i}}}{\mathrm{d} \hat{x}} &= \dfrac{e T_{e}}{m_{i} c_{s} \lambda_{D} \hat{v_{i}}} \hat{E} - \dfrac{c_{s}}{\lambda_{D}} \dfrac{\hat{v_{i}}}{\hat{L}} \nonumber \\
 		\dfrac{\mathrm{d} \hat{v_{i}}}{\mathrm{d} \hat{x}} &= \dfrac{e T_{e}}{m_{i} c_{s}^{2} \hat{v_{i}}} \hat{E} - \dfrac{\hat{v_{i}}}{\hat{L}} \nonumber \\
@@ -40,6 +40,7 @@
 		\caption{Ion velocity as a function of $x_{w}$ for various values of $L$. Inset: Ion velocity at the wall as a function of $\log\left(\hat{L}\right)$.}
 		\label{fig:1}
 	\end{figure}
+	
 	It is interesting to note that 
 	\begin{align}
 		\lim\limits_{\hat{L} \rightarrow \infty} \left(\dfrac{\mathrm{d} \hat{v_{i}}}{\mathrm{d} \hat{x}} \right) = \dfrac{\hat{E}}{\hat{v_{i}}}~,
@@ -50,7 +51,7 @@
 		\dfrac{1}{2} \left(v_{s}^{2} - v_{i}^{2}\right) &= \hat{\phi}\\
 		\hat{v_{i}} &= \sqrt{\hat{v_{s}^{2}} - 2 \hat{\phi}}~,
 	\end{align}
-	where $v_{s}$ is the ion velocity at the start of the sheath. This is the expression for the normalised ion velocity derived in assignment 1, and the explanation for the asymptotic behaviour observed in \cref{fig:1} as $\hat{L}$ increases.
+	where $v_{s}$ is the ion velocity at the start of the sheath. This is the expression for the normalised ion velocity derived in assignment 1, and explains the asymptotic behaviour observed in \cref{fig:1} as $\hat{L}$ increases.
 	
 	The source code is included.
 	\inputminted[linenos = true,
