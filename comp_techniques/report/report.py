@@ -148,7 +148,8 @@ def run():
     plt.close("all")
     # Matplotlib parameters to use TeX font and customise text size.
     plt.rc("text", usetex = True)
-    plt.rc("font", family = "serif", size = 16)
+    plt.rc("font", family = "serif", size = 30)
+    plt.rcParams['lines.linewidth'] = 4
     plt.rcParams["text.latex.preamble"] = r"\usepackage{bm}"
     #text.latex.preamble
     
@@ -288,12 +289,10 @@ def run():
         axarr[5].set_ylim(ylim[5,:])
         axarr[6].set_xlim(xlim[1,:])
         axarr[6].set_ylim(ylim[6,:])
-
-        
-        
     
-    plt.tight_layout()
+    #plt.tight_layout()
     # Save figure.
+    [figarr[j].savefig(filename = "%1i_%il.eps" % (j, np.log10(l_arr[0])), format = "eps") for j in range(7)]
     #plt.savefig(filename = "collisions.eps", format = "eps")
     # Show plot.
     plt.show()

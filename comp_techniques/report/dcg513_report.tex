@@ -1,7 +1,8 @@
-\documentclass[aip,apl,reprint]{revtex4-1}
+\documentclass[aip,apl]{revtex4-1}
 \usepackage{fontspec}
 \usepackage{amsmath,bm,amsfonts,amssymb}
 \usepackage{graphicx}
+\usepackage{tikz}
 \usepackage[colorlinks=true,
 			linkcolor=blue,
 			citecolor=blue,
@@ -37,6 +38,46 @@
 	\end{itemize}
 	
 	\section{Results}
+	\begin{figure}
+		\centering
+		\begin{subfigure}[b]{\textwidth}
+			\centering
+			\foreach \x in {0,1}
+			{
+				\includegraphics[width=0.3\linewidth]{\x_-1l.eps}
+				~
+			}
+			\includegraphics[width=0.3\linewidth]{2_-1l.eps}
+			
+			\foreach \x in {3,4}
+			{
+				\includegraphics[width=0.3\linewidth]{\x_-1l.eps}
+				~
+			}
+			\includegraphics[width=0.3\linewidth]{6_-1l.eps}
+			\caption{$ L = 10^{-1} $.}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{\textwidth}
+			\foreach \x in {0,1}
+			{
+				\includegraphics[width=0.3\linewidth]{\x_1l.eps}
+				~
+			}
+			\includegraphics[width=0.3\linewidth]{2_1l.eps}
+			
+			\foreach \x in {3,4}
+			{
+				\includegraphics[width=0.3\linewidth]{\x_1l.eps}
+				~
+			}
+			\includegraphics[width=0.3\linewidth]{6_1l.eps}
+			\caption{$ L = 10 $.}
+		\end{subfigure}
+		\caption{$ R = 0 \textrm{ vs. } R = -L \times 10^{0.15} $. Left to right, top to bottom: current, electrostatic potential, electric field, and ion velocity, density and continuity. All as a function of distance from the wall.}
+	\end{figure}
+	
+	
 	\begin{itemize}
 		\item Description of method appropriate for a paper. Give details of anything which you have done diferently, and give references for widely known methods such as RK4
 		\item Figures clearly presented. Legible labels and captions
