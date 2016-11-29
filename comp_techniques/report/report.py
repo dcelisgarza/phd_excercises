@@ -148,7 +148,7 @@ def run():
     plt.close("all")
     # Matplotlib parameters to use TeX font and customise text size.
     plt.rc("text", usetex = True)
-    plt.rc("font", family = "serif", size = 30)
+    plt.rc("font", family = "serif", size = 24)
     plt.rcParams['lines.linewidth'] = 4
     plt.rcParams["text.latex.preamble"] = r"\usepackage{bm}"
     #text.latex.preamble
@@ -212,7 +212,7 @@ def run():
                 [axarr[i+1].plot(x_wall, system.f[:,i], label = label2) for i in range(4)]
                 axarr[5].plot(np.log(system.f[:,2]), np.log(system.f[:,3]), label = label2)
                 axarr[6].plot(x_wall,system.f[:,2]*system.f[:,3], label = label2)
-        
+               
         ylimtmp2[1:5,:] = [[min(ylim[i+1,:]), max(ylim[i+1,:])] for i in range(4)]
         ylimtmp3[1:5,:] = [[min(ylimtmp[i+1,:]), max(ylimtmp[i+1,:])] for i in range(4)]
         
@@ -289,10 +289,11 @@ def run():
         axarr[5].set_ylim(ylim[5,:])
         axarr[6].set_xlim(xlim[1,:])
         axarr[6].set_ylim(ylim[6,:])
+        
     
     #plt.tight_layout()
     # Save figure.
-    [figarr[j].savefig(filename = "%1i_%il.eps" % (j, np.log10(l_arr[0])), format = "eps") for j in range(7)]
+    #[figarr[j].savefig(filename = "%1i_%il.eps" % (j, np.log10(l_arr[0])), format = "eps") for j in range(7)]
     #plt.savefig(filename = "collisions.eps", format = "eps")
     # Show plot.
     plt.show()
