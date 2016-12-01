@@ -148,16 +148,17 @@ def run():
     plt.close("all")
     # Matplotlib parameters to use TeX font and customise text size.
     plt.rc("text", usetex = True)
-    plt.rc("font", family = "serif", size = 24)
+    plt.rc("font", family = "serif", size = 40)
     plt.rcParams['lines.linewidth'] = 4
     plt.rcParams["text.latex.preamble"] = r"\usepackage{bm}"
+    plt.rcParams.update({'figure.autolayout': True})
     #text.latex.preamble
     
     # Collision length parameter. (clp != 0, else we get 1/0)
     clp = eval(input("Collision length exponent (L = 10^x) = "))
     # Create figure.
     nplots = range(7)
-    figarr = [plt.figure(i, figsize = (13,13/1.618)) for i in nplots]
+    figarr = [plt.figure(i, figsize = (20,12.75/1.618)) for i in nplots]
     axarr  = [figarr[i].add_subplot(111) for i in nplots] 
     
     # Linspace for x.
@@ -182,8 +183,8 @@ def run():
     for r in r_arr:
         for l in l_arr:
             # Initialise system with desired l.
-            label1 = r"$L = 10^{%1i}, ~R = %1i$" %(np.log10(l), r)
-            label2 = r"$L = 10^{%1i},~R = -10^{%1.2f}$" % (np.log10(l), math.copysign(np.log10(np.abs(r)),r))
+            label1 = r"$\bm{L = 10^{%1i}, ~R = %1i}$" %(np.log10(l), r)
+            label2 = r"$\bm{L = 10^{%1i},~R = -10^{%1.2f}}$" % (np.log10(l), math.copysign(np.log10(np.abs(r)),r))
             system = sheath([0., 0.001, 1., 1.])
             system = sheath_l(system, l)
             system = sheath_r(system, r)
@@ -293,7 +294,7 @@ def run():
     
     #plt.tight_layout()
     # Save figure.
-    #[figarr[j].savefig(filename = "%1i_%il.eps" % (j, np.log10(l_arr[0])), format = "eps") for j in range(7)]
+    [figarr[j].savefig(filename = "%1i_%il.eps" % (j, np.log10(l_arr[0])), format = "eps") for j in range(7)]
     #plt.savefig(filename = "collisions.eps", format = "eps")
     # Show plot.
     plt.show()
