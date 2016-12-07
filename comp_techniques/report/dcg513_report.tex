@@ -40,7 +40,7 @@
 	
 	One key aspect of plasma-wall interactions are Debye sheaths, which cause heating, damage and erosion \cite{sheath}. They are formed because the tokamak walls are at an effective electrostatic potential with respect to the plasma itself. As a result, electrons travel to the wall and generate an electric field which attracts ions to the wall \cite{bohm}. Idealised models assume ion-continuity (no loss or gain of ions through ionisation or recombination) and no collisions between ions. 
 	
-	Many attempts at modelling Debye sheaths have been made in the past \cite{lpcs}, but in this paper we examine a normalised and simple model where we only take recombinations into account. In the completely idealised model---no collisions and no recombination---we have the following system of equations (ignoring $x$-dependence),
+	Many attempts at modelling Debye sheaths have been made in the past \cite{lpcs, md}, but in this paper we examine a normalised and very simple \cite{theory} model where we only take recombinations into account. In the completely idealised model---no collisions and no recombination---we have the following system of equations (ignoring $x$-dependence),
 	\begin{subequations}
 		\begin{align}
 			\difx{\phi} &= -E \label{se:is1}\\
@@ -144,7 +144,7 @@
 			~
 			\includegraphics[width=0.44\linewidth]{6_-1l.eps}
 			\vspace{-0.3cm}
-			\caption{$ L = 10^{-1},~ R = -10^{-0.85}~\textrm{(Green)}~,~ R = 0~\textrm{(Blue)} $.}
+			\caption{$ L = 10^{-1},~ R = -10^{-0.85}~\textrm{(Dashed Red)}~,~ R = 0~\textrm{(Solid Blue)} $.}
 			\label{sf:rslta}
 		\end{subfigure}		
 		\begin{subfigure}[c]{\linewidth}
@@ -161,7 +161,7 @@
 			~
 			\includegraphics[width=0.44\linewidth]{6_1l.eps}
 			\vspace{-0.3cm}
-			\caption{$ L = 10,~ R = -10^{-1.15}~\textrm{(Green)}~,~ R = 0~\textrm{(Blue)} $.}
+			\caption{$ L = 10,~ R = -10^{-1.15}~\textrm{(Dashed Red)}~,~ R = 0~\textrm{(Solid Blue)} $.}
 			\label{sf:rsltb}
 		\end{subfigure}
 		\vspace{-0.3cm}

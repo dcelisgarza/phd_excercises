@@ -204,15 +204,15 @@ def run():
             vi_wall = np.append(vi_wall, np.interp(0., x_wall, system.f[:,2]))
             # Plot each curve.
             if r == 0:
-                axarr[0].plot(x_wall, system.j, label = label1)
-                [axarr[i+1].plot(x_wall, system.f[:,i], label = label1) for i in range(4)]
-                axarr[5].plot(np.log(system.f[:,2]), np.log(system.f[:,3]), label = label1)
-                axarr[6].plot(x_wall,system.f[:,2]*system.f[:,3], label = label1)
+                axarr[0].plot(x_wall, system.j, label = label1, color = "b")
+                [axarr[i+1].plot(x_wall, system.f[:,i], label = label1, color = "b") for i in range(4)]
+                axarr[5].plot(np.log(system.f[:,2]), np.log(system.f[:,3]), label = label1, color = "b")
+                axarr[6].plot(x_wall,system.f[:,2]*system.f[:,3], label = label1, color = "b")
             else:
-                axarr[0].plot(x_wall, system.j, label = label2)
-                [axarr[i+1].plot(x_wall, system.f[:,i], label = label2) for i in range(4)]
-                axarr[5].plot(np.log(system.f[:,2]), np.log(system.f[:,3]), label = label2)
-                axarr[6].plot(x_wall,system.f[:,2]*system.f[:,3], label = label2)
+                axarr[0].plot(x_wall, system.j, label = label2, color = "r", linestyle = "--")
+                [axarr[i+1].plot(x_wall, system.f[:,i], label = label2, color = "r", linestyle = "--") for i in range(4)]
+                axarr[5].plot(np.log(system.f[:,2]), np.log(system.f[:,3]), label = label2, color = "r", linestyle = "--")
+                axarr[6].plot(x_wall,system.f[:,2]*system.f[:,3], label = label2, color = "r", linestyle = "--")
                
         ylimtmp2[1:5,:] = [[min(ylim[i+1,:]), max(ylim[i+1,:])] for i in range(4)]
         ylimtmp3[1:5,:] = [[min(ylimtmp[i+1,:]), max(ylimtmp[i+1,:])] for i in range(4)]
