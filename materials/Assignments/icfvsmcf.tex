@@ -1,0 +1,68 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{paralist}
+\usepackage[colorlinks=true,
+linkcolor=blue,
+citecolor=blue,
+urlcolor=blue]
+{hyperref}
+\usepackage{cleveref}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{booktabs}
+\usepackage{lmodern}
+\linespread{1.5}
+\title{Materials Applications in Fusion}
+\author{Daniel Celis Garza}
+\date{\today}
+\newcommand{\mc}{MCF}
+\newcommand{\ic}{ICF}
+\begin{document}
+	\maketitle
+	\section{Introduction}
+		There currently exist two major branches of research for fusion energy production:
+		\begin{inparaenum}[\itshape 1)]
+			\item magnetic confinement fusion (\mc)---confines the plasma using magnetic fields and
+			\item inertial confinement fusion (\ic)---uses a frozen fuel pellet which is either directly or indirectly compressed by arrays of powerful lasers.
+		\end{inparaenum}
+		In either case, the objective is to achieve ``ignition'' (self-sustaining nuclear fusion) in accordance to Lawson's criterion,
+		%\begin{subequations}
+			\begin{align}
+				%n T \tau_{E} &\geq \dfrac{12}{\langle \sigma v \rangle} \dfrac{T}{E_{\alpha}}\\
+				n T \tau_{E} &\geq 3 \times 10^{21} \textrm{keV s m$^{-3}$},
+			\end{align}
+		%\end{subequations}
+		where $ n \equiv $ plasma density, $ T \equiv $ plasma temperature, $ \tau_{E} \equiv $ confinement time, $ \sigma \equiv $ fusion cross-section, $ v \equiv $ relative velocity and $ \langle \rangle $ denotes the average over the velocity distribution. Both methods go about meeting Lawson's criterion in wildly different ways: \mc~ maximises $ \tau_{E} $ and keeps $ n $ small; \ic~ maximises $ n $ and keeps $ \tau_{E} $ very small.
+		\subsection{Magnetic confinement}
+			As its name suggests \mc~ uses magnetic fields to confine the plasma. This is achieved via toroidal and poloidal magnetic fields respectively produced by poloidal superconducting magnets and a driving current within the plasma.
+			
+			This type of confinement is by no means perfect as it is strongly dependent on the reactor's geometry and a host of physical phenomena. The relevant aspects for materials research are two types of bulk drift:
+			\begin{inparaenum}[\itshape 1)]
+				\item $E \times B$---due to the presence of an electric field in the plasma,
+				\item $\nabla B$---due to the non-uniformity of the toroidal magnetic field.
+			\end{inparaenum}
+			And plasma-wall interactions which create relatively small zones which behave differently to the bulk plasma:
+			\begin{inparaenum}[\itshape 1)]
+				\item Debye-Sheath---a very small non-neutral region close to the wall formed by the electrons shielding an large effective electrostatic potential difference between the reactor walls and bulk plasma;
+				\item Pre-Sheath---a small quasi-neutral region where ions are accelerated by a very small electrostatic potential into the Debye-Sheath.
+			\end{inparaenum}
+			As a consequence, the plasma slowly drifts away from its original guiding centre until it gets close enough to the walls that it starts accelerating towards them. To make matters worse neutrons, ionising radiation and diffusion play important roles in damaging reactor walls.
+			
+			In general, the solution is to have a so-called ``scrape-off layer'' made of sacrificial material that would sit around the walls like small internal washers and get in the plasma's path before it reached the walls. The idea has been refined into the concept of a divertors, which is not only used to protect the walls but as a heat sink for energy collection. However, this brings its own challenges which will be expanded upon in \cref{ss:div}. Aside from this, \mc~ is relatively well understood and suitably advanced for large-scale projects like ITER and DEMO to be seriously talked about.
+		\subsection{Inertial confinement}
+	\section{Radiation environments}
+	\section{First wall}
+		\subsection{Solid vs liquid}
+	\section{Breeder blanket}
+	\section{Special requirements}
+		\subsection{Divertor}\label{ss:div}
+		\subsection{Direct vs Indirect drive}
+	\section{Safety}
+	\section{Technology readiness level}
+		In terms of relative advancement MCF is much further along than ICF.
+\end{document}

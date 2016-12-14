@@ -10,9 +10,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1000mm"
-   height="297mm"
-   viewBox="0 0 3543.3069 1052.3622"
+   width="850mm"
+   height="400mm"
+   viewBox="0 0 3011.8108 1417.3228"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -22,217 +22,232 @@
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker17341"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path17343"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker16759"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path16761" />
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path16761"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker16755"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path16757" />
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path16757"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker16751"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path16753" />
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path16753"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker16747"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path16749" />
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path16749"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
-       style="overflow:visible;"
+       style="overflow:visible"
        id="marker16743"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="Arrow1Mend">
       <path
-         transform="scale(0.4) rotate(180) translate(10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path16745" />
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path16745"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15642"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true"
        inkscape:collect="always">
       <path
          id="path15644"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15634"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true"
        inkscape:collect="always">
       <path
          id="path15636"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15628"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true"
        inkscape:collect="always">
       <path
          id="path15630"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15590"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true"
        inkscape:collect="always">
       <path
          id="path15592"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15586"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true"
        inkscape:collect="always">
       <path
          id="path15588"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15574"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path15576"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15570"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path15572"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15558"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path15560"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Mend"
        orient="auto"
-       refY="0.0"
-       refX="0.0"
+       refY="0"
+       refX="0"
        id="marker15552"
-       style="overflow:visible;"
+       style="overflow:visible"
        inkscape:isstock="true">
       <path
          id="path15554"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.4) rotate(180) translate(10,0)" />
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
     </marker>
     <marker
        inkscape:isstock="true"
@@ -2253,10 +2268,10 @@
     </linearGradient>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="295.85713 : 605.46682 : 1"
-       inkscape:vp_y="866.02534 : 500.00001 : 0"
-       inkscape:vp_z="869.95155 : 138.32395 : 1"
-       inkscape:persp3d-origin="497.90433 : -37.069749 : 1"
+       inkscape:vp_x="295.85712 : 605.46678 : 1"
+       inkscape:vp_y="866.02533 : 499.99997 : 0"
+       inkscape:vp_z="869.95154 : 138.32394 : 1"
+       inkscape:persp3d-origin="497.90433 : -37.069746 : 1"
        id="perspective4136" />
   </defs>
   <sodipodi:namedview
@@ -2266,9 +2281,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="3216.0627"
-     inkscape:cy="582.53779"
+     inkscape:zoom="0.5"
+     inkscape:cx="1480.5246"
+     inkscape:cy="709.77714"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2293,9 +2308,11 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,364.96063)">
     <g
-       id="g5815">
+       id="g5815"
+       transform="translate(-19.999998,-451.99995)">
       <g
          style="fill:none"
          transform="translate(-30.714286,-130.71429)"
@@ -2402,7 +2419,7 @@
     </g>
     <g
        id="g5758"
-       transform="translate(275,5.7142857)">
+       transform="translate(215.00001,-202.28569)">
       <circle
          style="fill:#c1c1c1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="circle5760"
@@ -2454,7 +2471,7 @@
     </g>
     <g
        id="g5795"
-       transform="translate(262.14286,242.14285)">
+       transform="translate(198.14287,-441.85707)">
       <circle
          style="fill:#c1c1c1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="circle5797"
@@ -2511,7 +2528,7 @@
          r="10.859139" />
     </g>
     <g
-       transform="translate(1.0000006,16.857138)"
+       transform="translate(-14.999998,-439.14281)"
        style="fill:none"
        id="g6471">
       <rect
@@ -2558,7 +2575,7 @@
     </g>
     <g
        id="g12114"
-       transform="translate(-16.970563,-9.8994949)">
+       transform="translate(-28.970562,-413.89945)">
       <g
          transform="matrix(1.3570904,0,0,1.3570904,-20.991817,-189.12172)"
          id="g6503">
@@ -2682,7 +2699,7 @@
     </g>
     <g
        id="g12103"
-       transform="translate(-302.3223,195.69849)">
+       transform="translate(-294.3223,-196.30146)">
       <g
          id="g12315">
         <path
@@ -2739,7 +2756,7 @@
     </g>
     <g
        style="fill:#808000"
-       transform="translate(470,34.214286)"
+       transform="translate(230.00003,38.214286)"
        id="g13240">
       <g
          id="g13136"
@@ -2876,7 +2893,8 @@
       </g>
     </g>
     <g
-       id="g4386">
+       id="g4386"
+       transform="translate(-231.99997,19.999998)">
       <circle
          style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="circle13204"
@@ -2970,7 +2988,7 @@
     </g>
     <g
        id="g4427"
-       transform="translate(8.4852814,-45.254834)">
+       transform="translate(-247.51469,2.7451603)">
       <g
          transform="translate(15,-12)"
          id="g4319">
@@ -3098,7 +3116,7 @@
     </g>
     <g
        id="g6731"
-       transform="translate(-56.999998,-36)">
+       transform="translate(-300.99997,-419.99995)">
       <g
          style="stroke-width:0.53251207;stroke-miterlimit:4;stroke-dasharray:0.53251207, 0.53251207;stroke-dashoffset:0"
          transform="matrix(1.9535044,0,0,1.8052057,-852.32721,-293.42589)"
@@ -3282,7 +3300,7 @@
     </g>
     <g
        id="g6767"
-       transform="translate(-5.999995,11)">
+       transform="translate(-309.99996,-364.99996)">
       <path
          inkscape:connector-curvature="0"
          id="path6359"
@@ -3385,7 +3403,7 @@
     </g>
     <g
        id="g4519"
-       transform="translate(-61.999994,1.9999998)">
+       transform="translate(-221.99998,-389.99995)">
       <g
          transform="translate(33.5,-1.5)"
          id="g8009">
@@ -3632,7 +3650,7 @@
     </g>
     <g
        id="g4640"
-       transform="translate(-109.99999,-11.999999)">
+       transform="translate(-865.9999,499.99994)">
       <path
          inkscape:connector-curvature="0"
          id="path4568"
@@ -3668,7 +3686,7 @@
     </g>
     <g
        id="g4633"
-       transform="translate(-109.99999,13.999999)">
+       transform="translate(-649.99993,421.99995)">
       <path
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 1364.0088,125.56349 166.8772,0"
@@ -3698,7 +3716,8 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g94322">
+       id="g94322"
+       transform="translate(-235.99997,0)">
       <path
          inkscape:connector-curvature="0"
          id="path5110"
@@ -3895,7 +3914,7 @@
     </g>
     <g
        id="g97720"
-       transform="translate(-87.999986,-4.9999996)">
+       transform="translate(-267.99997,-360.99996)">
       <g
          transform="translate(32.396965,-21.816232)"
          id="g5947">
@@ -4032,7 +4051,7 @@
     </g>
     <g
        id="g97796"
-       transform="translate(-184.99998,-76.999992)">
+       transform="translate(-328.99996,-400.99996)">
       <path
          inkscape:connector-curvature="0"
          id="path95945"
@@ -4085,7 +4104,7 @@
     </g>
     <g
        id="g97784"
-       transform="translate(-144.99998,-63.999996)">
+       transform="translate(-236.99997,-375.99996)">
       <path
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 1507.2868,842.67026 121.6222,-0.18264 0.1455,96.87362 z"
@@ -4139,7 +4158,8 @@
    id="tspan97782">A</tspan></tspan></text>
     </g>
     <g
-       id="g5252">
+       id="g5252"
+       transform="translate(-351.99996,-551.99994)">
       <rect
          y="285.58395"
          x="1275.9354"
@@ -4282,7 +4302,7 @@
     </g>
     <g
        id="g6060"
-       transform="translate(-108.93463,7.2623086)">
+       transform="translate(-528.93458,-136.73768)">
       <path
          inkscape:connector-curvature="0"
          id="path4767"
@@ -4388,7 +4408,7 @@
     </g>
     <g
        id="g6596"
-       transform="translate(-168.94203,738.51599)">
+       transform="translate(-1120.9419,550.51601)">
       <g
          id="g6430">
         <circle
@@ -4511,7 +4531,7 @@
     </g>
     <g
        id="g6637"
-       transform="translate(-932.22521,453.59888)">
+       transform="translate(-1124.2252,133.59892)">
       <g
          transform="translate(0,219.20308)"
          id="g6501">
@@ -4641,7 +4661,7 @@
     </g>
     <g
        id="g7354"
-       transform="translate(-490.07123,320.03734)">
+       transform="translate(-334.07125,-975.9625)">
       <circle
          style="fill:#c1c1c1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="circle6958"
@@ -4795,7 +4815,7 @@
     </g>
     <g
        id="g7330"
-       transform="translate(-520.7046,94.523296)">
+       transform="translate(-416.70458,-969.47658)">
       <circle
          r="10.859139"
          cy="650.20734"
@@ -4931,7 +4951,7 @@
     </g>
     <g
        id="g7705"
-       transform="translate(-164.9289,520.235)">
+       transform="translate(-672.92884,-239.76491)">
       <circle
          r="10.859139"
          cy="265.54129"
@@ -5138,7 +5158,8 @@
          style="fill:#c1c1c1;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
-       id="g15419">
+       id="g15419"
+       transform="translate(435.99995,-503.99995)">
       <text
          sodipodi:linespacing="125%"
          id="text8104"
@@ -5572,7 +5593,7 @@
            id="tspan10234">+</tspan><tspan
            sodipodi:role="line"
            x="2393.5671"
-           y="582.20721"
+           y="582.20728"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:center;text-anchor:middle"
            id="tspan10236">cementite</tspan></text>
       <text
@@ -5807,7 +5828,8 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g17345">
+       id="g17345"
+       transform="translate(-1619.9998,587.99993)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -6271,7 +6293,7 @@
          inkscape:connector-curvature="0"
          id="path17249"
          d="m 2890.2257,372.42854 0,-150.23901"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:8,8;stroke-dashoffset:0" />
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1" />
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -6293,7 +6315,7 @@
     </g>
     <g
        id="g18511"
-       transform="translate(-39,46)">
+       transform="translate(-922.99989,-357.99995)">
       <text
          sodipodi:linespacing="125%"
          id="text16503"
@@ -6581,7 +6603,8 @@
            id="tspan18451">β</tspan></text>
     </g>
     <g
-       id="g20652">
+       id="g20652"
+       transform="translate(-1391.9999,223.99997)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
