@@ -1,0 +1,70 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Enoeda et~al.(2003)Enoeda, Kosaku, Hatano, Kuroda, Miki, Honma, Akiba,
+  Konishi, Nakamura, Kawamura, et~al.]{bb3}
+Mikio Enoeda, Y~Kosaku, Tf~Hatano, T~Kuroda, N~Miki, T~Honma, M~Akiba,
+  S~Konishi, H~Nakamura, Y~Kawamura, et~al.
+\newblock Design and technology development of solid breeder blanket cooled by
+  supercritical water in japan.
+\newblock \emph{Nuclear Fusion}, 43\penalty0 (12):\penalty0 1837, 2003.
+
+\bibitem[Enoeda et~al.(2006)Enoeda, Akiba, Tanaka, Shimizu, Hasegawa, Konishi,
+  Kimura, Kohyama, Sagara, and Muroga]{bb4}
+Mikio Enoeda, Masato Akiba, Satoru Tanaka, Akihiko Shimizu, Akira Hasegawa,
+  Satoshi Konishi, Akihiko Kimura, Akira Kohyama, Akio Sagara, and Takeo
+  Muroga.
+\newblock Overview of design and r\&d of test blankets in japan.
+\newblock \emph{Fusion Engineering and Design}, 81\penalty0 (1):\penalty0
+  415--424, 2006.
+
+\bibitem[Kawamura et~al.(2003)Kawamura, Ishitsuka, Tsuchiya, Nakamichi, Uchida,
+  Yamada, Nakamura, Ito, Nakazawa, Takahashi, et~al.]{bb1}
+Hiroshi Kawamura, E~Ishitsuka, K~Tsuchiya, M~Nakamichi, M~Uchida, H~Yamada,
+  K~Nakamura, H~Ito, T~Nakazawa, H~Takahashi, et~al.
+\newblock Development of advanced blanket materials for a solid breeder blanket
+  of a fusion reactor.
+\newblock \emph{Nuclear fusion}, 43\penalty0 (8):\penalty0 675, 2003.
+
+\bibitem[Klueh and Nelson(2007)]{fms1}
+RL~Klueh and AT~Nelson.
+\newblock Ferritic/martensitic steels for next-generation reactors.
+\newblock \emph{Journal of Nuclear Materials}, 371\penalty0 (1):\penalty0
+  37--52, 2007.
+
+\bibitem[Malang and Mattas(1995)]{lfw1}
+Siegfried Malang and R~Mattas.
+\newblock Comparison of lithium and the eutectic lead-lithium alloy, two
+  candidate liquid metal breeder materials for self-cooled blankets.
+\newblock \emph{Fusion Engineering and Design}, 27:\penalty0 399--406, 1995.
+
+\bibitem[Roux et~al.(1996)Roux, Avon, Floreancing, Mougin, Rasneur, and
+  Ravel]{bb2}
+N~Roux, J~Avon, A~Floreancing, J~Mougin, B~Rasneur, and S~Ravel.
+\newblock Low-temperature tritium releasing ceramics as potential materials for
+  the iter breeding blanket.
+\newblock \emph{Journal of nuclear materials}, 233:\penalty0 1431--1435, 1996.
+
+\bibitem[Ukai and Fujiwara(2002)]{ods1}
+Shigeharu Ukai and Masayuki Fujiwara.
+\newblock Perspective of ods alloys application in nuclear environments.
+\newblock \emph{Journal of Nuclear Materials}, 307:\penalty0 749--757, 2002.
+
+\bibitem[Wong et~al.(2005)]{lfw2}
+CPC Wong et~al.
+\newblock Assessment of first wall and blanket options with the use of liquid
+  breeder.
+\newblock \emph{Fusion science and technology}, 47\penalty0 (3):\penalty0
+  502--509, 2005.
+
+\bibitem[Wu et~al.(2007)Wu, Team, et~al.]{lfw3}
+Yican Wu, FDS Team, et~al.
+\newblock Design status and development strategy of china liquid lithium--lead
+  blankets and related material technology.
+\newblock \emph{Journal of Nuclear Materials}, 367:\penalty0 1410--1415, 2007.
+
+\end{thebibliography}

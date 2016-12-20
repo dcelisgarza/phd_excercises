@@ -14,19 +14,21 @@ urlcolor=blue]
 {hyperref}
 \usepackage{cleveref}
 \usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
-\usepackage{booktabs}
+\usepackage{booktabs, multirow}
 \usepackage{lmodern}
+\usepackage[square, numbers, sort&compress]{natbib}
 \linespread{1.5}
 \title{Materials Applications in Fusion}
 \author{Daniel Celis Garza}
 \date{\today}
 \newcommand{\mc}{MCF}
 \newcommand{\ic}{ICF}
+\newcommand{\ite}{ITER}
 \begin{document}
 	\maketitle
-	\section{Introduction}
+	\section{Introduction}\label{s:intro}
 		There currently exist two major branches of research for fusion energy production:
-		\begin{inparaenum}[\itshape 1)]
+		\begin{inparaenum}[\itshape1\upshape)]
 			\item magnetic confinement fusion (\mc)---confines the plasma using magnetic fields and
 			\item inertial confinement fusion (\ic)---uses a frozen fuel pellet which is either directly or indirectly compressed by arrays of powerful lasers.
 		\end{inparaenum}
@@ -37,32 +39,108 @@ urlcolor=blue]
 				n T \tau_{E} &\geq 3 \times 10^{21} \textrm{keV s m$^{-3}$},
 			\end{align}
 		%\end{subequations}
-		where $ n \equiv $ plasma density, $ T \equiv $ plasma temperature, $ \tau_{E} \equiv $ confinement time, $ \sigma \equiv $ fusion cross-section, $ v \equiv $ relative velocity and $ \langle \rangle $ denotes the average over the velocity distribution. Both methods go about meeting Lawson's criterion in wildly different ways: \mc~ maximises $ \tau_{E} $ and keeps $ n $ small; \ic~ maximises $ n $ and keeps $ \tau_{E} $ very small.
-		\subsection{Magnetic confinement}
-			As its name suggests \mc~ uses magnetic fields to confine the plasma. This is achieved via toroidal and poloidal magnetic fields respectively produced by poloidal superconducting magnets and a driving current within the plasma.
+		where $ n \equiv $ plasma density, $ T \equiv $ plasma temperature, $ \tau_{E} \equiv $ confinement time, $ \sigma \equiv $ fusion cross-section, $ v \equiv $ relative velocity and $ \langle \rangle $ denotes the average over the velocity distribution. Both methods go about meeting Lawson's criterion in wildly different ways: \mc~maximises $ \tau_{E} $ and keeps $ n $ small; \ic~maximises $ n $ and keeps $ \tau_{E} $ very small.
+		\subsection{Magnetic confinement}\label{s:mc}
+			As its name suggests \mc~uses magnetic fields to confine the plasma. This is achieved via toroidal and poloidal magnetic fields respectively produced by poloidal superconducting magnets and a driving current within the plasma.
 			
 			This type of confinement is by no means perfect as it is strongly dependent on the reactor's geometry and a host of physical phenomena. The relevant aspects for materials research are two types of bulk drift:
-			\begin{inparaenum}[\itshape 1)]
+			\begin{inparaenum}[\itshape1\upshape)]
 				\item $E \times B$---due to the presence of an electric field in the plasma,
 				\item $\nabla B$---due to the non-uniformity of the toroidal magnetic field.
 			\end{inparaenum}
 			And plasma-wall interactions which create relatively small zones which behave differently to the bulk plasma:
-			\begin{inparaenum}[\itshape 1)]
+			\begin{inparaenum}[\itshape1\upshape)]
 				\item Debye-Sheath---a very small non-neutral region close to the wall formed by the electrons shielding an large effective electrostatic potential difference between the reactor walls and bulk plasma;
 				\item Pre-Sheath---a small quasi-neutral region where ions are accelerated by a very small electrostatic potential into the Debye-Sheath.
 			\end{inparaenum}
 			As a consequence, the plasma slowly drifts away from its original guiding centre until it gets close enough to the walls that it starts accelerating towards them. To make matters worse neutrons, ionising radiation and diffusion play important roles in damaging reactor walls.
 			
-			In general, the solution is to have a so-called ``scrape-off layer'' made of sacrificial material that would sit around the walls like small internal washers and get in the plasma's path before it reached the walls. The idea has been refined into the concept of a divertors, which is not only used to protect the walls but as a heat sink for energy collection. However, this brings its own challenges which will be expanded upon in \cref{ss:div}. Aside from this, \mc~ is relatively well understood and suitably advanced for large-scale projects like ITER and DEMO to be seriously talked about.
-		\subsection{Inertial confinement}
-	\section{Radiation environments}
-	\section{First wall}
-		\subsection{Solid vs liquid}
+			In general, the solution is to have a so-called ``scrape-off layer'' made of sacrificial material that would sit around the walls like small internal washers and get in the plasma's path before it reached the walls. The idea has been refined into the concept of a divertors, which is not only used to protect the walls but as a heat sink for energy collection. The consequences of poor confinement are not the only issue as 14 MeV neutrons play a crucial role in the deterioration of reactor walls and diagnostic equipment. However, even with all this, \mc~is relatively well understood and suitably advanced for large-scale projects like ITER and DEMO to be seriously talked about and undertaken.
+		\subsection{Inertial confinement}\label{s:ic}
+		\ic~is a less understood and advanced approach to achieve energy generation via nuclear fusion. The process is analogous to a star core, in that fusion is achieved by massively increasing density and temperature enough to sustain nuclear fusion for a very short amount of time. This means that for \ic~to even approach viability, the reactor must pulse at a frequency of at least 10 Hz. The approach is to ablate the surface of a frozen spherical fuel pellet with extremely powerful lasers so the core is compressed and heated enough for fusion to occur at the pellet core. It is also worth mentioning that there are two proposed methods of achieving fusion with \ic:
+		\begin{inparaenum}{\itshape1\upshape)}
+			\item direct drive---the pellet is collapsed by the lasers directly, this approach is comparatively efficient and represents smaller production costs;
+			\item indirect drive---the pellet is collapsed by x-rays given off by a cylindrical container called a ``Hohlrum'' after the gold walls are irradiated by the driving lasers, the approach provides a potential solution for pellet delivery and minimises Rayleigh-Taylor instabilities but increases costs and produces shrapnel.
+		\end{inparaenum}
+		
+		The method is even more challenging than \mc~in almost every respect due to a myriad of issues ranging from the mass production of fuel pellets, pellet delivery, laser charging rates and positioning, poorly understood pellet magneto-hydrodynamics, first wall materials, shrapnel (indirect drive), temperature fluctuations, and diagnostic equipment. A less talked about issue is the fact that funding and talent are hard to come by due to the potential weaponisation of the technology involved.
+	\section{Operation environment}\label{s:op}
+	
+		One constant feature of nuclear energy production is ionising and non-ionising radiation. In the case of fission, this is mostly in the form of low energy neutrons and residual radiation of fission products. Fusion however, deals with the sparsely explored 14 MeV neutron spectrum. The lack of appropriate sources of suitably energetic neutrons has meant that modelling, and searching for experimental analogues of damage cascades have become a crucial part of materials research \cite{model, dpa}.
+		
+		Operating environments change vastly between \ic~and \mc~as described by \cref{t:rad}. The table should be read with a measure of skepticism as the numbers and conditions are approximate because they are not yet fully known, especially for \ic. It is however, a reasonable first approximation into the materials requirements for both types of fusion energy production. The table also ignores the components needed for energy harvesting---divertor in the case of \mc, still unkown in the case of \ic.
+		\begin{table}
+			\centering
+			\caption{Approximate operating environment comparison between \mc~(ITER) and \ic~(LMJ). Reproduced from \cite{mcficfrad}. Note these numbers are unrepresentative of actual fusion power plants as both ITER and the LMJ are experiments---it is likely power plants will require much harsher operating conditions.}
+			\label{t:rad}
+				\begin{tabular}{cccc}
+					\toprule
+					Location & Radiation & \mc~(ITER) & \ic~(LMJ)\\
+					\midrule
+					\multicolumn{1}{c}{\multirow{6}{*}{1\textsuperscript{st} wall}} & \multicolumn{1}{c}{\multirow{2}{*}{Neutron flux}} & \multicolumn{1}{c}{\multirow{2}{*}{$3 \times 10^{18}/\textrm{m$^{2}$s}$}} & $ 5 \times 10^{18}\textrm{ n/shot},$ \\
+					&  &  & $ 1.5 \times 10^{25}/\textrm{m$^{2}$s} $ \\
+					& \multicolumn{1}{c}{\multirow{2}{*}{Neutron fluence*}} & \multicolumn{1}{c}{\multirow{2}{*}{$ 3 \times 10^{25}/\textrm{m$^{2}$} $}} & $ \sim 10^{21} \textrm{ n/30 years},$ \\
+					&  &  & $ 3 \times 10^{18}/\textrm{m$^{2}$}$ \\
+					& $\gamma$-ray dose rate & $ 2 \times 10^{3} \textrm{ Gy/s}$ & $ \sim 10^{10} \textrm{ Gy/s} $ \\
+					& Energetic ion/atoms flux & $ 5 \times 10^{19}/\textrm{m$^{2}s$}$ & $ \cdots $ \\
+					\midrule
+					\multicolumn{1}{c}{\multirow{9}{*}{1\textsuperscript{st} diagnostic}} & Neutron flux & $ 1 \times 10^{17}/\textrm{m$^{2}$s} $ & $ 1 \times 10^{26}/\textrm{m$^{2}$s} $ \\
+					& Neutron damage rate & $ 6 \times 10^{-9} \textrm{ dpa/s} $ & negligible \\
+					& Neutron fluence* & $ 2 \times 10^{24}/\textrm{m$^{2}$} $ & $ \sim 10^{19}/\textrm{m$^{2}$} $ \\
+					& Typical neutron damage* & $ 0.1 \textrm{ dpa} $ & negligible \\
+					& $\gamma$-ray dose rate & $ \sim 10^{2} \textrm{ Gy/s} $ & $ \sim 10^{10} \textrm{ Gy/s} $ \\
+					& Energetic ion/atoms flux & $ \sim 10^{18}/\textrm{m$^{2}$} $ & $ \cdots $ \\
+					& Nuclear heating & $ 1 \textrm{ MW/m$^{3}$}$ & $ 0 $ \\
+					& Typical operating temperature & $520 \textrm{ K}$ & $293 \textrm{ K}$ \\
+					& Atmosphere & Vacuum & Air \\
+					\midrule
+					\multicolumn{1}{c}{\multirow{2}{*}{Other}} & EM pulse & $\cdots$ & 10--500 kV/m @ 1 GHz \\
+					& Shrapnel & $\cdots$ & 1--10 km/s @ $\sim 30 \mu$m \\
+					\bottomrule
+				\end{tabular}
+			\caption*{* End of life.}
+		\end{table}
+		\Cref{t:rad} shows that dosages are wildly different between systems. For the most part, \mc~receives higher doses of neutrons and ions in both the first wall and diagnostic equipment. This seems to indicate that the material requirements for \mc~are stricter than for \ic. However, shrapnel production is a strong possibility in \ic, especially with indirect drive where the Hohlrum would be obliterated in the process. This is a huge challenge as such high energy shrapnel would be capable of destroying diagnostic equipment and damaging the first wall. The table also assumes the reactor to be at room temperature---a poor assumption for real power stations \cite{icfpwr1,icfpwr2,icfpwr3}---and a non-negligible atmospheric pressure which would make sufficiently precise fuel delivery very difficult.
+	
+		Overall, the table is unrepresentative of potential operating environments in large-scale power stations but sets lower limits on the demands of the materials involved in both types of fusion energy production.
+	\section{First wall}\label{s:fw}
+		The purpose of the first wall is to protect the breeder blanket and structural materials from operating conditions that would otherwise damage them. 
+		
+		It is clear from \cref{t:rad} and \cite{icfpwr1,icfpwr2,icfpwr3} that the first wall must be resistant to radiation and high temperatures in both types of fusion reactors. \ite~uses beryllium-tungsten for the first wall, as they are effective heat and radiation shields. Unfortunately, this is far from optimum because tungsten is very brittle in the best of cases and only gets worse after irradiation \cite{irw1, irw2, irw3}. Another limiting factor is the lack of 14 MeV neutron sources, so ion irradiation is used as an imperfect damage analogue \cite{ion1, ion2}. Despite the drawbacks, tungsten-beryllium first walls are by far the best option of first wall materials for \mc.
+		
+		\ic~presents many other challenges that place even higher requirements of first wall materials. \Cref{t:rad} takes its \ic~estimates from the LMJ, which is much further away from a productive power plant than ITER. Consequently, it is not unreasonable to think that \ic's environments would place greater requirements on first wall materials than \mc. Furthermore, the operating temperature of an \ic~reactor would fluctuate between pulses producing unwelcome thermal stresses on the first wall \cite{ict1, ict2}. To make matters worse, shrapnel is a very real problem if indirect drive is used as it can severely damage diagnostic equipment and chip the reactor walls.
+		
+		Alternatives to solid first walls---such as molten lithium-lead eutectics---have been proposed, but corrosion effects and impracticality of pumping dense molten metal around reactors has meant that solutions such as this are a long way from being implemented \cite{lfw1, lfw2, lfw3}.
 	\section{Breeder blanket}
+		The purpose of the breeder blanket is to produce tritium for the reactor to use. Currently, $^{6}$Li enriched blankets are of particular interest because of the following tritium-producing nuclear reactions,
+		\begin{align}
+			\textrm{$^{6}$Li} + n &\to \textrm{$^{4}$He} + \textrm{$^{3}$H} + 4.78\; \textrm{MeV} \\
+			\textrm{$^{7}$Li} + n &\to \textrm{$^{4}$He} + \textrm{$^{3}$H} + n + 2.47\; \textrm{MeV}\; .
+		\end{align}
+		The presence of $^{7}$Li is not ideal but neither is it a large problem. Among the materials proposed are Li-Zr oxides and Li-Ti oxides (ceramics) for T production.
+		
+		Since the blanket is not a structural material and will (hopefully) not be subjected to unmanageably large heat loads various morphologies have been proposed \cite{bb1, bb2, bb3}. They all attempt to maximise surface area whilst minimising fragmentation to dust. So current proposals for solid breeder blankets are pellet based. The problem is mostly down to cooling at this point, as having water near potentially metallic lithium is a significant fire hazard. Not to mention that cooling a collection of pellets is much more inefficient than a solid block unless the coolant runs between the pellets themselves. This has lead to the proposal of He cooled systems, where the gas is pumped through the pellets' container rather than a system of pipes whose contact area is much smaller \cite{bb4}.
+		
+		As mentioned in \cref{s:fw} there have been proposals for liquid first wall-breeder blanket hybrids, but current technology is not advanced enough for this interesting concept to be much more than that.
+	\section{Structural materials}
+		Given that neither the first wall nor the breeder blanket can provide structural support, there is a need for materials which can not only provide structural support but is also resistant to radiation damage. When it comes to structural materials, \ic~and\mc~is perhaps the only instance where breakthroughs equally benefit both methods.
+		
+		Under normal circumstances structural materials would not be an issue. However, radiation damage severely changes a material's characteristics---so what might have originally been a suitable material could potentially become woefully inadequate for the job years later. 
+		
+		Damage-wise, neutron and ion collisions generate damage cascades which dislodge atoms from their lattice sites. This ongoing process continually generates, expands and moves dislocations across the material. Said dislocations are in the form of prismatic loops that glide along cylindrical axis and vastly change the material's mechanical properties. Amongst these changes in mechanical properties are embrittlement, crack propagation, internal stress generation, interstitial atom diffusion and creep. To make matters worse, none of these behave linearly or even predictably so a lot of research needs to be done---particularly in modelling because suitable experiments are often expensive, inconvenient and time-consuming. Moreover, if the material allows vacancies to aggregate into ``bubbles'', volumetric expansion becomes a serious issue. Worse still, a material's isotropy dictates how symmetric the expansion is, adding a whole host of other considerations.
+		
+		Aside from the aforementioned structural problems, health and safety must be considered when choosing structural materials. These are mostly due to transmutation reactions resulting from neutron radiation. Cobalt is a common component of many steel alloys and superalloys; but all of them are ruled out because of the possible production of $^{60}$Co and especially the nuclear isomer $^{60\textrm{m}}$Co, which are high intensity $\gamma$-ray sources.
+		
+		All these problems narrow our choice of materials to those which are resistant to dislocation motion and transmutation reactions. Which points us towards low activation steels such as ferritic-martensitic steels \cite{fms1}. Such steels perform well under load at high temperatures and do not contain components which could transmute to highly radioactive isotopes. They are also comparatively cheap and easy to make, and the necessary infrastructure for their mass production already exists. Having ``solved'' the activation problem, everything revolves around finding a material that would remain suitable for its task in spite of being damaged by irradiation. Unfortunately, there is a lack of information regarding such steels' mechanical properties under suitable irradiation conditions. And that information which we do have \cite{fms1, fms2, fms3, fms4} points towards the radiation-induced changes in mechanical properties being a serious issue for this class of steels.
+		
+		Another alternative is to use oxide-dispersion-strengthened (ODS). Similarly to molten lead-lithium eutectic first walls, they are seen as the panacea for all structural problems in nuclear fusion reactors. They are low activation---as they do not contain elements which transmute to intensely radioactive isotopes---and resistant to changes in their mechanical properties because the oxide particles disperse vacancies throughout their surface area and provide difficult obstacles for dislocations to move through. Also similar to liquid first walls, they are a long way away from being implemented. ODS steels suffer from being extremely hard to mass produce \cite{ods1}. They are currently created by sintering extremely fine powders, followed by annealing and various post-synthesis processes such as cold rolling and recrystallisation to give them the desired shapes and microstructures. The process is not only impractical but expensive; it is also not advanced enough to produce complex shapes, and the matter of joining ODS components together is still an open problem.
 	\section{Special requirements}
+		\subsection{Superconducting Magnets}
 		\subsection{Divertor}\label{ss:div}
 		\subsection{Direct vs Indirect drive}
 	\section{Safety}
 	\section{Technology readiness level}
 		In terms of relative advancement MCF is much further along than ICF.
+	\bibliographystyle{plainnat}
+	\bibliography{icfvsmcf}
 \end{document}
