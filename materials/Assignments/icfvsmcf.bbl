@@ -1,9 +1,25 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cheverev et~al.(2002)Cheverev, Glukhikh, Filatov, Belykov, Muratov,
+  Egorov, Rodin, Malkov, Sukhanova, Gavrilov, et~al.]{sm1}
+N~Cheverev, V~Glukhikh, O~Filatov, V~Belykov, V~Muratov, S~Egorov, I~Rodin,
+  A~Malkov, M~Sukhanova, S~Gavrilov, et~al.
+\newblock Iter tf conductor insert coil manufacture.
+\newblock \emph{IEEE transactions on applied superconductivity}, 12\penalty0
+  (1):\penalty0 548--553, 2002.
+
+\bibitem[Devred et~al.(2012)Devred, Backbier, Bessette, Bevillard, Gardner,
+  Jewell, Mitchell, Pong, and Vostner]{sm2}
+Arnaud Devred, Ina Backbier, Denis Bessette, Gregory Bevillard, Mark Gardner,
+  Mathew Jewell, Neil Mitchell, Ian Pong, and Alexander Vostner.
+\newblock Status of iter conductor development and production.
+\newblock \emph{IEEE Transactions on Applied Superconductivity}, 22\penalty0
+  (3):\penalty0 4804909--4804909, 2012.
 
 \bibitem[Enoeda et~al.(2003)Enoeda, Kosaku, Hatano, Kuroda, Miki, Honma, Akiba,
   Konishi, Nakamura, Kawamura, et~al.]{bb3}
