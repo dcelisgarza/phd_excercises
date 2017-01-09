@@ -1,25 +1,132 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Cheverev et~al.(2002)Cheverev, Glukhikh, Filatov, Belykov, Muratov,
-  Egorov, Rodin, Malkov, Sukhanova, Gavrilov, et~al.]{sm1}
-N~Cheverev, V~Glukhikh, O~Filatov, V~Belykov, V~Muratov, S~Egorov, I~Rodin,
-  A~Malkov, M~Sukhanova, S~Gavrilov, et~al.
-\newblock Iter tf conductor insert coil manufacture.
-\newblock \emph{IEEE transactions on applied superconductivity}, 12\penalty0
-  (1):\penalty0 548--553, 2002.
+\bibitem[Hora(2004)]{icfvsmcf}
+Heinrich Hora.
+\newblock Developments in inertial fusion energy and beam fusion at magnetic
+  confinement.
+\newblock \emph{Laser and Particle Beams}, 22\penalty0 (04):\penalty0 439--449,
+  2004.
 
-\bibitem[Devred et~al.(2012)Devred, Backbier, Bessette, Bevillard, Gardner,
-  Jewell, Mitchell, Pong, and Vostner]{sm2}
-Arnaud Devred, Ina Backbier, Denis Bessette, Gregory Bevillard, Mark Gardner,
-  Mathew Jewell, Neil Mitchell, Ian Pong, and Alexander Vostner.
-\newblock Status of iter conductor development and production.
-\newblock \emph{IEEE Transactions on Applied Superconductivity}, 22\penalty0
-  (3):\penalty0 4804909--4804909, 2012.
+\bibitem[Stacey(2010)]{mcf}
+Weston~M Stacey.
+\newblock \emph{Fusion: an introduction to the physics and technology of
+  magnetic confinement fusion}.
+\newblock John Wiley \& Sons, 2010.
+
+\bibitem[McCrory and Verdon(2012)]{icf}
+ROBERT~L McCrory and CHARLES~P Verdon.
+\newblock Inertial confinement fusion.
+\newblock \emph{Computer Applications in Plasma Science and Engineering
+  (Springer Science \& Business Media, 2012)}, page 291, 2012.
+
+\bibitem[Lawson(1957)]{lawson}
+John~D Lawson.
+\newblock Some criteria for a power producing thermonuclear reactor.
+\newblock \emph{Proceedings of the Physical Society. Section B}, 70\penalty0
+  (1):\penalty0 6, 1957.
+
+\bibitem[Muroga et~al.(2002)Muroga, Gasparotto, and Zinkle]{fusmat1s}
+T~Muroga, M~Gasparotto, and SJ~Zinkle.
+\newblock Overview of materials research for fusion reactors.
+\newblock \emph{Fusion engineering and design}, 61:\penalty0 13--25, 2002.
+
+\bibitem[Bourgade et~al.(2008)Bourgade, Costley, Reichle, Hodgson, Hsing,
+  Glebov, Decreton, Leeper, Leray, Dentan, et~al.]{openv}
+JL~Bourgade, AE~Costley, R~Reichle, ER~Hodgson, W~Hsing, V~Glebov, M~Decreton,
+  R~Leeper, JL~Leray, M~Dentan, et~al.
+\newblock Diagnostic components in harsh radiation environments: Possible
+  overlap in r\&d requirements of inertial confinement and magnetic fusion
+  systemsa).
+\newblock \emph{Review of Scientific Instruments}, 79\penalty0 (10):\penalty0
+  10F304, 2008.
+
+\bibitem[B{\"o}hne et~al.(1982)B{\"o}hne, Hofmann, Kessler, Kulcinski,
+  Meyer-ter Vehn, von M{\"o}llendorff, Moses, M{\"u}ller, Sviatoslavsky, Sze,
+  et~al.]{icfpwr1}
+D~B{\"o}hne, I~Hofmann, G~Kessler, GL~Kulcinski, J~Meyer-ter Vehn, U~von
+  M{\"o}llendorff, GA~Moses, RW~M{\"u}ller, IN~Sviatoslavsky, DK~Sze, et~al.
+\newblock Hiball—a conceptual design study of a heavy-ion driven inertial
+  confinement fusion power plant.
+\newblock \emph{Nuclear Engineering and Design}, 73\penalty0 (2):\penalty0
+  195--200, 1982.
+
+\bibitem[Lindl et~al.(1992)Lindl, McCrory, and Campbell]{icfpwr2}
+John~D Lindl, Robert~L McCrory, and E~Michael Campbell.
+\newblock Progress toward ignition and burn propagation in inertial confinement
+  fusion.
+\newblock \emph{Phys. Today}, 45\penalty0 (9):\penalty0 32--40, 1992.
+
+\bibitem[Moir et~al.(1994)Moir, Bieri, Chen, Dolan, Hoffman, House, Leber, Lee,
+  Lee, Liu, et~al.]{icfpwr3}
+RW~Moir, RL~Bieri, XM~Chen, TJ~Dolan, MA~Hoffman, PA~House, RL~Leber, JD~Lee,
+  YT~Lee, JC~Liu, et~al.
+\newblock Hylife-ii: A molten-salt inertial fusion energy power plant
+  design—final report.
+\newblock \emph{Fusion Science and Technology}, 25\penalty0 (1):\penalty0
+  5--25, 1994.
+
+\bibitem[Keys and Moteff(1970)]{irw1}
+LK~Keys and J~Moteff.
+\newblock Neutron irradiation and defect recovery of tungsten.
+\newblock \emph{Journal of Nuclear Materials}, 34\penalty0 (3):\penalty0
+  260--280, 1970.
+
+\bibitem[Ye et~al.(2003)Ye, Kanehara, Fukuta, Ohno, and Takamura]{irw2}
+MY~Ye, H~Kanehara, S~Fukuta, N~Ohno, and S~Takamura.
+\newblock Blister formation on tungsten surface under low energy and high flux
+  hydrogen plasma irradiation in nagdis-i.
+\newblock \emph{Journal of nuclear materials}, 313:\penalty0 72--76, 2003.
+
+\bibitem[Takamura et~al.(2006)Takamura, Ohno, Nishijima, and Kajita]{irw3}
+Shuichi Takamura, Noriyasu Ohno, Dai Nishijima, and Shin Kajita.
+\newblock Formation of nanostructured tungsten with arborescent shape due to
+  helium plasma irradiation.
+\newblock \emph{Plasma and fusion research}, 1:\penalty0 051--051, 2006.
+
+\bibitem[Moses(2009)]{ict1}
+Edward~I Moses.
+\newblock Ignition on the national ignition facility: a path towards inertial
+  fusion energy.
+\newblock \emph{Nuclear Fusion}, 49\penalty0 (10):\penalty0 104022, 2009.
+
+\bibitem[Malang and Mattas(1995)]{lfw1}
+Siegfried Malang and R~Mattas.
+\newblock Comparison of lithium and the eutectic lead-lithium alloy, two
+  candidate liquid metal breeder materials for self-cooled blankets.
+\newblock \emph{Fusion Engineering and Design}, 27:\penalty0 399--406, 1995.
+
+\bibitem[Wong et~al.(2005)]{lfw2}
+CPC Wong et~al.
+\newblock Assessment of first wall and blanket options with the use of liquid
+  breeder.
+\newblock \emph{Fusion science and technology}, 47\penalty0 (3):\penalty0
+  502--509, 2005.
+
+\bibitem[Wu et~al.(2007)Wu, Team, et~al.]{lfw3}
+Yican Wu, FDS Team, et~al.
+\newblock Design status and development strategy of china liquid lithium--lead
+  blankets and related material technology.
+\newblock \emph{Journal of Nuclear Materials}, 367:\penalty0 1410--1415, 2007.
+
+\bibitem[Kawamura et~al.(2003)Kawamura, Ishitsuka, Tsuchiya, Nakamichi, Uchida,
+  Yamada, Nakamura, Ito, Nakazawa, Takahashi, et~al.]{bb1}
+Hiroshi Kawamura, E~Ishitsuka, K~Tsuchiya, M~Nakamichi, M~Uchida, H~Yamada,
+  K~Nakamura, H~Ito, T~Nakazawa, H~Takahashi, et~al.
+\newblock Development of advanced blanket materials for a solid breeder blanket
+  of a fusion reactor.
+\newblock \emph{Nuclear fusion}, 43\penalty0 (8):\penalty0 675, 2003.
+
+\bibitem[Roux et~al.(1996)Roux, Avon, Floreancing, Mougin, Rasneur, and
+  Ravel]{bb2}
+N~Roux, J~Avon, A~Floreancing, J~Mougin, B~Rasneur, and S~Ravel.
+\newblock Low-temperature tritium releasing ceramics as potential materials for
+  the iter breeding blanket.
+\newblock \emph{Journal of nuclear materials}, 233:\penalty0 1431--1435, 1996.
 
 \bibitem[Enoeda et~al.(2003)Enoeda, Kosaku, Hatano, Kuroda, Miki, Honma, Akiba,
   Konishi, Nakamura, Kawamura, et~al.]{bb3}
@@ -38,49 +145,159 @@ Mikio Enoeda, Masato Akiba, Satoru Tanaka, Akihiko Shimizu, Akira Hasegawa,
 \newblock \emph{Fusion Engineering and Design}, 81\penalty0 (1):\penalty0
   415--424, 2006.
 
-\bibitem[Kawamura et~al.(2003)Kawamura, Ishitsuka, Tsuchiya, Nakamichi, Uchida,
-  Yamada, Nakamura, Ito, Nakazawa, Takahashi, et~al.]{bb1}
-Hiroshi Kawamura, E~Ishitsuka, K~Tsuchiya, M~Nakamichi, M~Uchida, H~Yamada,
-  K~Nakamura, H~Ito, T~Nakazawa, H~Takahashi, et~al.
-\newblock Development of advanced blanket materials for a solid breeder blanket
-  of a fusion reactor.
-\newblock \emph{Nuclear fusion}, 43\penalty0 (8):\penalty0 675, 2003.
-
 \bibitem[Klueh and Nelson(2007)]{fms1}
 RL~Klueh and AT~Nelson.
 \newblock Ferritic/martensitic steels for next-generation reactors.
 \newblock \emph{Journal of Nuclear Materials}, 371\penalty0 (1):\penalty0
   37--52, 2007.
 
-\bibitem[Malang and Mattas(1995)]{lfw1}
-Siegfried Malang and R~Mattas.
-\newblock Comparison of lithium and the eutectic lead-lithium alloy, two
-  candidate liquid metal breeder materials for self-cooled blankets.
-\newblock \emph{Fusion Engineering and Design}, 27:\penalty0 399--406, 1995.
+\bibitem[Baluc et~al.(2007)Baluc, Gelles, Jitsukawa, Kimura, Klueh, Odette,
+  Van~der Schaaf, and Yu]{fms2}
+N~Baluc, DS~Gelles, S~Jitsukawa, A~Kimura, RL~Klueh, GR~Odette, B~Van~der
+  Schaaf, and Jinnan Yu.
+\newblock Status of reduced activation ferritic/martensitic steel development.
+\newblock \emph{Journal of Nuclear Materials}, 367:\penalty0 33--41, 2007.
 
-\bibitem[Roux et~al.(1996)Roux, Avon, Floreancing, Mougin, Rasneur, and
-  Ravel]{bb2}
-N~Roux, J~Avon, A~Floreancing, J~Mougin, B~Rasneur, and S~Ravel.
-\newblock Low-temperature tritium releasing ceramics as potential materials for
-  the iter breeding blanket.
-\newblock \emph{Journal of nuclear materials}, 233:\penalty0 1431--1435, 1996.
+\bibitem[Garner et~al.(2000)Garner, Toloczko, and Sencer]{fms3}
+FA~Garner, MB~Toloczko, and BH~Sencer.
+\newblock Comparison of swelling and irradiation creep behavior of
+  fcc-austenitic and bcc-ferritic/martensitic alloys at high neutron exposure.
+\newblock \emph{Journal of Nuclear Materials}, 276\penalty0 (1):\penalty0
+  123--142, 2000.
+
+\bibitem[Jitsukawa et~al.(2004)Jitsukawa, Kimura, Kohyama, Klueh, Tavassoli,
+  Van~der Schaaf, Odette, Rensman, Victoria, and Petersen]{fms4}
+Shiro Jitsukawa, Akihiko Kimura, Akira Kohyama, RL~Klueh, AA~Tavassoli,
+  B~Van~der Schaaf, GR~Odette, JW~Rensman, M~Victoria, and C~Petersen.
+\newblock Recent results of the reduced activation ferritic/martensitic steel
+  development.
+\newblock \emph{Journal of Nuclear Materials}, 329:\penalty0 39--46, 2004.
 
 \bibitem[Ukai and Fujiwara(2002)]{ods1}
 Shigeharu Ukai and Masayuki Fujiwara.
 \newblock Perspective of ods alloys application in nuclear environments.
 \newblock \emph{Journal of Nuclear Materials}, 307:\penalty0 749--757, 2002.
 
-\bibitem[Wong et~al.(2005)]{lfw2}
-CPC Wong et~al.
-\newblock Assessment of first wall and blanket options with the use of liquid
-  breeder.
-\newblock \emph{Fusion science and technology}, 47\penalty0 (3):\penalty0
-  502--509, 2005.
+\bibitem[Klueh et~al.(2002)Klueh, Gelles, Jitsukawa, Kimura, Odette, Van~der
+  Schaaf, and Victoria]{ods2}
+RL~Klueh, DS~Gelles, S~Jitsukawa, A~Kimura, GR~Odette, B~Van~der Schaaf, and
+  M~Victoria.
+\newblock Ferritic/martensitic steels--overview of recent results.
+\newblock \emph{Journal of Nuclear Materials}, 307:\penalty0 455--465, 2002.
 
-\bibitem[Wu et~al.(2007)Wu, Team, et~al.]{lfw3}
-Yican Wu, FDS Team, et~al.
-\newblock Design status and development strategy of china liquid lithium--lead
-  blankets and related material technology.
-\newblock \emph{Journal of Nuclear Materials}, 367:\penalty0 1410--1415, 2007.
+\bibitem[Lindau et~al.(2005)Lindau, M{\"o}slang, Rieth, Klimiankou,
+  Materna-Morris, Alamo, Tavassoli, Cayron, Lancha, Fernandez, et~al.]{ods3}
+R~Lindau, A~M{\"o}slang, M~Rieth, M~Klimiankou, E~Materna-Morris, A~Alamo, A-AF
+  Tavassoli, C~Cayron, A-M Lancha, P~Fernandez, et~al.
+\newblock Present development status of eurofer and ods-eurofer for application
+  in blanket concepts.
+\newblock \emph{Fusion Engineering and Design}, 75:\penalty0 989--996, 2005.
+
+\bibitem[Aikens et~al.(1995)Aikens, Roussel, and Bray]{lens1}
+David~M Aikens, Andre Roussel, and Michael Bray.
+\newblock Derivation of preliminary specifications for transmitted wavefront
+  and surface roughness for large optics used in inertial confinement fusion.
+\newblock In \emph{Solid State Lasers for Application to Inertial Confinement
+  Fusion (ICF)}, pages 350--360. International Society for Optics and
+  Photonics, 1995.
+
+\bibitem[Fleurot et~al.(2005)Fleurot, Cavailler, and Bourgade]{lens2}
+No{\"e}l Fleurot, Claude Cavailler, and JL~Bourgade.
+\newblock The laser megajoule (lmj) project dedicated to inertial confinement
+  fusion: Development and construction status.
+\newblock \emph{Fusion Engineering and Design}, 74\penalty0 (1):\penalty0
+  147--154, 2005.
+
+\bibitem[Costley(2010)]{optic1}
+Alan~E Costley.
+\newblock Towards diagnostics for a fusion reactor.
+\newblock \emph{IEEE Transactions on Plasma Science}, 38\penalty0
+  (10):\penalty0 2934--2943, 2010.
+
+\bibitem[Neely(2016)]{mylar}
+David Neely.
+\newblock Introduction to inertial confinement fusion power plant components.
+\newblock Lecture, November 2016.
+
+\bibitem[Cheverev et~al.(2002)Cheverev, Glukhikh, Filatov, Belykov, Muratov,
+  Egorov, Rodin, Malkov, Sukhanova, Gavrilov, et~al.]{sm1}
+N~Cheverev, V~Glukhikh, O~Filatov, V~Belykov, V~Muratov, S~Egorov, I~Rodin,
+  A~Malkov, M~Sukhanova, S~Gavrilov, et~al.
+\newblock Iter tf conductor insert coil manufacture.
+\newblock \emph{IEEE transactions on applied superconductivity}, 12\penalty0
+  (1):\penalty0 548--553, 2002.
+
+\bibitem[Mitchell et~al.(2009)Mitchell, Bauer, Bessette, Devred, Gallix, Jong,
+  Knaster, Libeyre, Lim, Sahu, et~al.]{scmcost}
+Neil Mitchell, Pierre Bauer, Denis Bessette, Arnaud Devred, Remy Gallix,
+  C~Jong, J~Knaster, P~Libeyre, B~Lim, A~Sahu, et~al.
+\newblock Status of the iter magnets.
+\newblock \emph{Fusion Engineering and Design}, 84\penalty0 (2):\penalty0
+  113--121, 2009.
+
+\bibitem[Devred et~al.(2012)Devred, Backbier, Bessette, Bevillard, Gardner,
+  Jewell, Mitchell, Pong, and Vostner]{sm2}
+Arnaud Devred, Ina Backbier, Denis Bessette, Gregory Bevillard, Mark Gardner,
+  Mathew Jewell, Neil Mitchell, Ian Pong, and Alexander Vostner.
+\newblock Status of iter conductor development and production.
+\newblock \emph{IEEE Transactions on Applied Superconductivity}, 22\penalty0
+  (3):\penalty0 4804909--4804909, 2012.
+
+\bibitem[Kotschenreuther et~al.(2010)Kotschenreuther, Valanju, Mahajan, Zheng,
+  Pearlstein, Bulmer, Canik, and Maingi]{superx}
+M~Kotschenreuther, P~Valanju, S~Mahajan, LJ~Zheng, LD~Pearlstein, RH~Bulmer,
+  John Canik, and R~Maingi.
+\newblock The super x divertor (sxd) and a compact fusion neutron source
+  (cfns).
+\newblock \emph{Nuclear Fusion}, 50\penalty0 (3):\penalty0 035003, 2010.
+
+\bibitem[Baldwin and Doerner(2008)]{hew}
+MJ~Baldwin and RP~Doerner.
+\newblock Helium induced nanoscopic morphology on tungsten under fusion
+  relevant plasma conditions.
+\newblock \emph{Nuclear Fusion}, 48\penalty0 (3):\penalty0 035001, 2008.
+
+\bibitem[Norajitra et~al.(2008)Norajitra, Abdel-Khalik, Giancarli, Ihli,
+  Janeschitz, Malang, Mazul, and Sardain]{divprod}
+Prachai Norajitra, Said~I Abdel-Khalik, Luciano~M Giancarli, Thomas Ihli,
+  Guenter Janeschitz, Siegfried Malang, Igor~V Mazul, and Pierre Sardain.
+\newblock Divertor conceptual designs for a fusion power plant.
+\newblock \emph{Fusion Engineering and Design}, 83\penalty0 (7):\penalty0
+  893--902, 2008.
+
+\bibitem[Woodworth and Meier(1997)]{hohcost}
+John~G Woodworth and Wayne~R Meier.
+\newblock Target production for inertial fusion energy.
+\newblock \emph{Fusion Science and Technology}, 31\penalty0 (3):\penalty0
+  280--290, 1997.
+
+\bibitem[Perkins et~al.(2009)Perkins, Betti, LaFortune, and Williams]{ddvsid}
+L~John Perkins, R~Betti, KN~LaFortune, and WH~Williams.
+\newblock Shock ignition: a new approach to high gain inertial confinement
+  fusion on the national ignition facility.
+\newblock \emph{Physical review letters}, 103\penalty0 (4):\penalty0 045004,
+  2009.
+
+\bibitem[Bayramian et~al.(2011)]{leff}
+A~Bayramian et~al.
+\newblock Compact, efficient laser systems required for laser inertial fusion
+  energy.
+\newblock \emph{Fusion Science and Technology}, 60\penalty0 (1):\penalty0
+  28--48, 2011.
+
+\bibitem[Notomi(2000)]{fmod1}
+{\'a}M~Notomi.
+\newblock Theory of light propagation in strongly modulated photonic crystals:
+  Refractionlike behavior in the vicinity of the photonic band gap.
+\newblock \emph{Physical Review B}, 62\penalty0 (16):\penalty0 10696, 2000.
+
+\bibitem[Gavartin et~al.(2011)Gavartin, Braive, Sagnes, Arcizet, Beveratos,
+  Kippenberg, and Robert-Philip]{fmod2}
+Emanuel Gavartin, R{\'e}my Braive, Isabelle Sagnes, Olivier Arcizet, Alexios
+  Beveratos, Tobias~J Kippenberg, and Isabelle Robert-Philip.
+\newblock Optomechanical coupling in a two-dimensional photonic crystal defect
+  cavity.
+\newblock \emph{Physical review letters}, 106\penalty0 (20):\penalty0 203902,
+  2011.
 
 \end{thebibliography}

@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abernethy(2016)]{abernethy2016predicting}
+RG~Abernethy.
+\newblock Predicting the performance of tungsten in a fusion environment: a
+  literature review.
+\newblock \emph{Materials Science and Technology}, pages 1--12, 2016.
+
+\end{thebibliography}
